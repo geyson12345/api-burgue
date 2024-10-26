@@ -21,8 +21,8 @@ jobs:
                - name: Login no docker Hub
                  run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
                - name: Build docker image
-                 run: docker build -t  geyson12345/imgLanche .
+                 run: docker build -t  geyson12345/img-lanche .
                - name: Push image docker
-                 run: docker push geyson12345/imgLanche
+                 run: docker push geyson12345/img-lanche
 
 
